@@ -1,0 +1,67 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="./assets/loguitocer.png" width="auto" height="120">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a routerLink="/" class="navbar-item">
+        Home
+      </a>
+
+      <a routerLink="/clasificados" class="navbar-item">
+        Clasificados
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a routerLink="/" class="navbar-link">
+          Administración
+        </a>
+        <div class="navbar-dropdown">
+          <a routerLink="/seguridad" class="navbar-item">
+            seguridad
+          </a>
+          <a routerLink="/eventos" class="navbar-item">
+            eventos
+          </a>
+          <a routerLink="/mascotas" class="navbar-item">
+            mascotas
+          </a>
+          <a routerLink="/medioambiente" class="navbar-item">
+            reciclaje
+          </a>
+          <a routerLink="/mnto" class="navbar-item">
+            mantenimiento
+          </a>
+          <a routerLink="/reglamento" class="navbar-item">
+            reglamento
+          </a>
+          <hr class="navbar-divider">
+          <a routerLink="/contacto" class="navbar-item">
+            contactenos
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Entrar</strong>
+          </a>
+          <a class="button is-light">
+            Salir
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

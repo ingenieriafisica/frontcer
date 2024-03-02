@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>Formulario de Contacto - InfoCer</h2>
+    <form action="enviar.php" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+<div class="container">
+    <app-buzondesugerencias></app-buzondesugerencias>
+</div>

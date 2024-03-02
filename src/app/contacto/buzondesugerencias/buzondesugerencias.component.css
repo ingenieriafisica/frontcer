@@ -1,0 +1,36 @@
+/* Add some basic styling to Cusdis comments form */
+#cusdis_thread {
+    margin-top: 20px; /* Adjust margin as needed */
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add border for visual separation */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    color:#007bff;
+  }
+  
+  /* Style the input fields */
+  #cusdis_thread input[type="text"],
+  #cusdis_thread input[type="email"],
+  #cusdis_thread textarea {
+    width: 100%; /* Take up full width */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 10px; /* Add margin for spacing between fields */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 3px; /* Rounded corners */
+    color:#007bff;
+  }
+  
+  /* Style the submit button */
+  #cusdis_thread input[type="submit"] {
+    background-color: #0c8e08; /* Change background color */
+    color: #fff; /* Change text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  #cusdis_thread input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  
