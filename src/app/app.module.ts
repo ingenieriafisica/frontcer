@@ -8,7 +8,6 @@ import { NavbarcerComponent } from './navbarcer/navbarcer.component';
 import { FootercerComponent } from './footercer/footercer.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

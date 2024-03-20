@@ -1,16 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-
-
-body {
-  font-family: "Josefin Sans", sans-serif;
+* {
+  font-family: "Saira", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 200;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
-p {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: 2.5rem;
-    font-weight: 257;
-    font-style: normal;
-  }

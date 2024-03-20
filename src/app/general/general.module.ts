@@ -8,6 +8,7 @@ import { ReglamentoComponent } from './reglamento/reglamento.component';
 import { MascotasComponent } from './mascotas/mascotas.component';
 import { MedioambienteComponent } from './medioambiente/medioambiente.component';
 import { EventosComponent } from './eventos/eventos.component';
+import { StrapiService } from '../strapi.service';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { EventosComponent } from './eventos/eventos.component';
   imports: [
     CommonModule,
     GeneralRoutingModule
-  ]
+  ],
+  providers: [StrapiService],
 })
 export class GeneralModule { }
