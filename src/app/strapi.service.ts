@@ -12,20 +12,6 @@ export class StrapiService {
 
   constructor(private http: HttpClient) { }
 
-  getEventData() {
-    return this.http
-      .get<Eventos[]>(`${this.apiUrl}/posts?populate=*`)
-      .pipe(
-        map((response: any) => {
-          console.log('data: ', response.data);
-          return response.data;
-        }),
-        map((eventos: Eventos[]) => {
-          return eventos.map((evento) => {
-            eventos.data.attributes.Titulo = `${this.apiUrl}/posts}${ eventos.data.attributes.Titulo }`)
-          return eventos;
-        });
-  })
-  )
+
 
 }

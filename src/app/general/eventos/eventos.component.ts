@@ -13,11 +13,5 @@ export class EventosComponent implements OnInit{
 
   constructor(private strapiService: StrapiService) { }
 
-  ngOnInit(): void {
-    this.strapiService.getEventData().subscribe(
-      eventData => this.eventos = eventData
-    );
-  }
-
 
 }
