@@ -1,8 +1,0 @@
-<div class="card">
-<div class="content" *ngFor="let event of eventos">
-  <h2>{{ event.attributes.Titulo }}</h2>
-  <p>{{ event.attributes.cuerpo[0].children[0].text }}</p>
-  <p>Date: {{ event.attributes.fecha }}</p>
-  <p>Published: {{ event.attributes.publicado ? 'Yes' : 'No' }}</p>
-</div>
-</div>

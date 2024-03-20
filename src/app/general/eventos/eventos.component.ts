@@ -1,7 +1,6 @@
 import { Component,OnInit} from '@angular/core';
-import { StrapiService } from 'src/app/strapi.service';
-import { Eventos,Attributes } from './eventos';
-
+import { EventosService } from './eventos.service';
+import { Eventos } from './eventos';
 
 @Component({
   selector: 'app-eventos',
@@ -10,8 +9,24 @@ import { Eventos,Attributes } from './eventos';
 })
 export class EventosComponent implements OnInit{
   eventos: Eventos[]=[];
+  constructor(private  eventosService:  EventosService) { }
 
-  constructor(private strapiService: StrapiService) { }
+  ngOnInit(): void {
+    this.loadEventos();
+  }
 
+  loadEventos(): void {
+    this.eventosService.getEventos().subscribe((response: any) => {
+      this.eventos = response;
+      console.log(this.eventos);
+    });
+  }
+
+  loadProduct(id: string): void {
+    this.eventosService.getEvento(id).subscribe((response: any) => {
+      this.eventos = response;
+      console.log(this.eventos);
+    });
+  }
 
 }
