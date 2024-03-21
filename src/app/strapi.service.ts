@@ -8,7 +8,7 @@ import { Eventos } from './general/eventos/eventos';
 })
 
 export class StrapiService {
-  private apiUrl = 'http://82.197.93.184:1337/api'; // Adjust URL as needed
+  private apiUrl = 'http://82.197.93.184:3333'; // Adjust URL as needed
 
   constructor(private http: HttpClient) { }
 

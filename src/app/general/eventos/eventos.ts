@@ -1,41 +1,23 @@
-export interface Eventos {
-  data: Datum[];
-  meta: Meta;
+interface EventosInterface {
+  nombre: string;
+  fecha: Date;
+  lugar: string;
+  asistentes: string[];
+  descripcion?: string;
 }
 
-export interface Datum {
-  id:         number;
-  attributes: Attributes;
-}
+export class Eventos implements EventosInterface {
+  nombre: string;
+  fecha: Date;
+  lugar: string;
+  asistentes: string[];
+  descripcion?: string;
 
-export interface Attributes {
-  Titulo:      string;
-  uid:         null;
-  cuerpo:      Cuerpo[];
-  fecha:       Date;
-  publicado:   boolean;
-  createdAt:   Date;
-  updatedAt:   Date;
-  publishedAt: Date;
-}
-
-export interface Cuerpo {
-  type:     string;
-  children: Child[];
-}
-
-export interface Child {
-  text: string;
-  type: string;
-}
-
-export interface Meta {
-  pagination: Pagination;
-}
-
-export interface Pagination {
-  page:      number;
-  pageSize:  number;
-  pageCount: number;
-  total:     number;
+  constructor(nombre: string, fecha: Date, lugar: string, asistentes: string[], descripcion?: string) {
+      this.nombre = nombre;
+      this.fecha = fecha;
+      this.lugar = lugar;
+      this.asistentes = asistentes;
+      this.descripcion = descripcion;
+  }
 }

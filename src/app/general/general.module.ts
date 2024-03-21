@@ -9,7 +9,7 @@ import { MascotasComponent } from './mascotas/mascotas.component';
 import { MedioambienteComponent } from './medioambiente/medioambiente.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { StrapiService } from '../strapi.service';
-
+import { EventosService } from './eventos/eventos.service';
 
 @NgModule({
   declarations: [
@@ -25,6 +25,6 @@ import { StrapiService } from '../strapi.service';
     CommonModule,
     GeneralRoutingModule
   ],
-  providers: [StrapiService],
+  providers: [StrapiService,EventosService],
 })
 export class GeneralModule { }
