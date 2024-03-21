@@ -9,36 +9,13 @@ import { MedioambienteComponent } from './medioambiente/medioambiente.component'
 import { EventosComponent } from './eventos/eventos.component';
 
 const routes: Routes = [
-
-  {
-    path: '',
-    component: GeneralComponent
-  },
-  {
-    path: 'news',
-    component: NoticiasComponent
-  },
-  {
-    path: 'mnto',
-    component: MntoComponent // Default component for /general route
-  },
-
-  {
-    path: 'reglamento',
-    component: ReglamentoComponent
-  },
-  {
-    path: 'mascotas',
-    component: MascotasComponent
-  },
-  {
-    path: 'medioambiente',
-    component: MedioambienteComponent
-  },
-  {
-    path: 'eventos',
-    component: EventosComponent
-  }
+  { path: '', component: GeneralComponent },
+  { path: 'news', component: NoticiasComponent },
+  { path: 'mnto', component: MntoComponent },
+  { path: 'reglamento', component: ReglamentoComponent },
+  { path: 'mascotas', component: MascotasComponent },
+  { path: 'medioambiente', component: MedioambienteComponent },
+  { path: 'eventos', component: EventosComponent }
 ];
 
 @NgModule({
