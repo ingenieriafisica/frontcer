@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-message h1 {
+    font-size: 100px;
+    margin: 0;
+    color: #ff6347; /* Tomato */
+}
+
+.error-message h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.error-message p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.error-message a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347; /* Tomato */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.error-message a:hover {
+    background-color: #ff4737; /* Darker Tomato */
+}
