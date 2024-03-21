@@ -8,6 +8,7 @@ import { MascotasComponent } from './mascotas/mascotas.component';
 import { MedioambienteComponent } from './medioambiente/medioambiente.component';
 import { EventosComponent } from './eventos/eventos.component';
 
+
 const routes: Routes = [
   { path: '', component: GeneralComponent },
   { path: 'news', component: NoticiasComponent },

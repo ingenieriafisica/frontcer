@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarcerComponent } from './navbarcer/navbarcer.component';
 import { FootercerComponent } from './footercer/footercer.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { SeguridadModule } from './seguridad/seguridad.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    GeneralModule
+    GeneralModule,
+    SeguridadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

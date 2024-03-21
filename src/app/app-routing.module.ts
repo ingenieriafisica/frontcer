@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { GeneralModule } from './general/general.module';
+import { SeguridadModule } from './seguridad/seguridad.module';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./general/general.module').then(m => m.GeneralModule) }, 
@@ -9,8 +10,7 @@ const routes: Routes = [
   { path: 'convivencia', loadChildren: () => import('./convivencia/convivencia.module').then(m => m.ConvivenciaModule) },
   { path: 'contacto', loadChildren: () => import('./contacto/contacto.module').then(m => m.ContactoModule) }, 
   { path: 'clasificados', loadChildren: () => import('./clasificados/clasificados.module').then(m => m.ClasificadosModule) },
-  { path: 'general', loadChildren: () => import('./general/general.module').then(m => m.GeneralModule ) },
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: '', pathMatch: 'full'},
   { path: '**', component: PagenotfoundComponent}];
 
 @NgModule({

@@ -18,7 +18,8 @@ import { EventosService } from './eventos/eventos.service';
     ReglamentoComponent,
     MascotasComponent,
     MedioambienteComponent,
-    EventosComponent
+    EventosComponent,
+
   ],
   imports: [
     CommonModule,
